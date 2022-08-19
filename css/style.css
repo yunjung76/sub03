@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'SUIT-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BCcardL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.1/BCcardL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+body{font-size: 18px; line-height: 26px; color: #000; font-family: 'SUIT-Medium';}
+
+/*header*/
+#header{background-color: #f7f1ef; width: 100%; height: 120px;}
+.header_inner{width: 1320px; margin: 0 auto; position: relative;}
+.logo{position:absolute; top: 10px; left: 10px;}
+#gnb{float: right;}
+#gnb li{float: left;}
+#gnb li a{display: block; font-family: 'BCcardL'; font-size: 26px; padding-left: 250px; height: 30px; margin-top: 48px; }
+#gnb li a:hover{font-family: 'BCcardL'; color: #2d4633; font-size: 26px; font-weight: bold;}
+.solid{width:100%; margin:auto; margin-top:10px; height:2.5px; background:#2d4633; visibility:hidden; opacity:0; transform:scaleX(0); transition-property:opacity, transform; transition-duration:0.5s;}
+#gnb>li>a:hover .solid{transform:scaleX(1); opacity:1; visibility:visible;}	
+
+/*banner*/
+#banner{width: 100%; height: 400px; margin-bottom: 50px;}
+.banner_img{width: 100%; height: 100%; display: inline-block;}
+
+/*MD*/
+#shop{width: 1320px; margin: 0 auto; text-align: center; padding: 20px;}
+h1{font-size: 36px; margin-bottom: 10px 0;}
+#shop p{font-size: 19px;}
+.gift_box{margin: 30px 0;}
+
+/*hr*/
+.line{margin: 0% auto; text-align: center; margin: 80px 0 50px 0;}
+.hr{text-align: center; }
+
+/*goods*/
+#goods{width: 1245px; height: 760px; text-align: center; margin: 0 auto; position: relative;}
+.box{width: 400px; height: 370px; float: left; margin-bottom: 20px;}
+.middle{margin: 0 20px;}
+.color{background-color: #f4ede5;}
+h3{text-align: center; color: #2d4633; font-size: 36px; padding: 170px 0;}
+
+
+
+
+
+
+/*popup*/
+
+/*popup01*/
+.popup01{ 
+    width:100%;
+	height:100%;
+	background:rgba(255,255,255,0.6);
+	
+	position:fixed;
+	top:0;
+	left:0; /*팝업창위치설정*/
+	
+	
+	display:none;
+   }
+
+
+.popup01 div{ 
+    position:absolute;
+  
+    left: 50%;
+    top:50%; 
+    transform:translate(-50%,-50%);
+    width: 500px; height: 550px; 
+
+
+    background-color: #f9f4ed; 
+    border-radius: 50px; 
+    text-align: center;
+   
+    background: #f9f4ed url(../images/popup01.png)no-repeat top center; position: relative; box-sizing: border-box; 
+    z-index: 95; 
+    /* display: none; */
+} 
+
+
+/*popup02*/
+.popup02{ 
+    width:100%;
+	height:100%;
+	background:rgba(255,255,255,0.6);
+	
+	position:fixed;
+	top:0;
+	left:0; 
+	
+	
+	display:none;}
+
+.popup02 div{
+    position:absolute;
+
+    left: 50%;
+    top:50%; 
+    transform:translate(-50%,-50%);
+    width: 500px; height: 550px; 
+
+
+    background-color: #f9f4ed; 
+    border-radius: 50px; 
+    text-align: center;
+   
+    background: #f9f4ed url(../images/popup02.png)no-repeat top center; position: relative; box-sizing: border-box; 
+    z-index: 95; 
+    /* display: none; */
+}
+
+
+/*popup03*/
+.popup03{ 
+   width: 100%; height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    position: fixed; top: 0; left: 0;
+    display: none;
+}
+
+.popup03 div{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; height: 550px;
+    background-color: #f9f4ed;
+    border-radius: 50px;
+    text-align: center;
+    background: #f9f4ed url(../images/popup03.png) no-repeat top center; position: relative; box-sizing: border-box;
+    z-index: 95;} 
+
+
+/*popup04*/
+.popup04{ 
+    width: 100%; height: 100%; background: rgba(255, 255, 255, 0.6);
+    position: fixed; top: 0; left: 0; display: none;}    
+
+.popup04 div{
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 500px; height: 550px;
+    background-color: #f9f4ed; border-radius: 50px; text-align: center;
+    background: #f9f4ed url(../images/popup04.png) no-repeat top center;
+    position: relative; box-sizing: border-box; z-index: 95; 
+}
+
+
+/*popup05*/
+.popup05{ 
+    width: 100%; height: 100%; background: rgba(255, 255, 255, 0.6);
+    position: fixed; top: 0; left: 0; display: none; }     
+
+.popup05 div{
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 500px; height: 550px;
+    background-color: #f9f4ed; border-radius: 50px; text-align: center; 
+    background: #f9f4ed url(../images/popup05.png) no-repeat top center;
+    position: relative ; box-sizing: border-box; z-index: 95;
+}
+    
+
+.exit{position: absolute; z-index:99; right: 8.5%; top: 5.5%; z-index:99;}
+.popup_text{padding-top: 320px;}
+h2{font-family: 'BCcardL'; font-weight: bold; font-size: 22px; color: #422f28; margin-top: 4px;}
+.cost{font-size: 14px; color: #534e48; }
+.text{font-size: 14px; color: #534e48; line-height: 22px;}
+.small{font-size: 10px;}
+.button{color: #fff; background-color: #534e48; font-weight: bold; display: inline-block; padding: 5px 15px; border-radius: 50px; margin-top: 10px; font-size: 15px;}
+.button:hover{font-weight: bold; background-color: #e0d0c5; color: #534e48;}
+
+/*팝업*/
+.popup{position: absolute; top: 1200px; left: 50%; margin-left: -450px;  display: none;}
+.popup .exit{display: block;}
+
+
+/*footer*/
+#footer{width: 100%; height: 200px; background-color: #e0d0c5; margin-top: 70px; margin-top: 100px;}
+.footer_inner{width: 1320px; margin: 0 auto; position: relative; clear: both;}
+.footer_logo{float: left; position: absolute; top: 54px;}
+.footer_text{float: right; position: absolute; left: 300px; top: 65px; font-family: 'SUIT-Medium'; color: #422f28; line-height: 40px;}
+
+.insta, .youtube, .facebook{position: absolute;}
+.insta{position: absolute; right: 280px; top: 80px;}
+.youtube{position: absolute; right: 200px; top: 80px;}
+.facebook{position: absolute; right: 120px; top: 80px;}
+.insta:hover, .youtube:hover, .facebook:hover{opacity: 50%;}
